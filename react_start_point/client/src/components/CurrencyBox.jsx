@@ -18,16 +18,12 @@ var CurrencyBox = React.createClass({
         var currencyKeys = Object.keys(data.rates);
         for (var currencyCode of currencyKeys) {
           var rate = data.rates[currencyCode];
-          // console.log("Currency Code:", currencyCode);
-          // console.log("Rate:", rate);
           var currency = {
           currencyCode: currencyCode,
           currencyRate: rate 
         };
-          // currency[currencyCode] = rate;
           currencyArray.push(currency);
         }
-          console.log(currencyArray);
         this.setState({currencies: currencyArray, focusCurrency: currencyArray[0]});
       }
     }.bind(this);
