@@ -39,7 +39,7 @@ var CurrencyBox = React.createClass({
   render: function() {
     return (
         <div>
-        <h2>Currencies</h2>
+        <h2>Currency Exchange Rates For The Euro</h2>
           <CurrencySelector currencies={this.state.currencies} selectCurrency = {this.setFocusCurrency}/>
           <CurrencyDetails currency={this.state.focusCurrency} />
         </div>
